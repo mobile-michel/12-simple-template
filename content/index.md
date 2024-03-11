@@ -1,6 +1,7 @@
 ---
 title: Home page
 layout: default
+tags: footer
 ---
 <a href="https://example.com">I'm a hyperlink</a>
 

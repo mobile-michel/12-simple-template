@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: default
-tags: primary
+tags: [primary, footer]
 ---
 
 <form>
