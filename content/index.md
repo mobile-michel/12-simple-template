@@ -8,3 +8,5 @@ tags: footer
 <button>I'm a button</button>
 
 <a class="button" href="https://example.com">I'm a button with a link</a>
+
+CDN is {{ cdn }}
