@@ -4,7 +4,13 @@
     "github": "https://github.com/mobile-michel/10-basic-liquid-simple",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
-    "favicon": "/assets/img/favicon.svg",
-    "css": "/assets/css/simple.min.css",
-    "css2": "https://cdn.simplecss.org/simple.min.css"
+    "favicon": "/assets/img/favicon.png",
+    "css": "/assets/css/simple.css",
+    "cdn": {
+        "bahunya": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
+        "mvp": "https://unpkg.com/mvp.css",
+        "pico": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+        "simple": "https://cdn.simplecss.org/simple.min.css",
+        "tacit": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"
+    }
 }

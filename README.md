@@ -1,4 +1,4 @@
-# Basic template with Eleventy, Liquid & Simple.css framework
+# Simple template with Eleventy, Liquid & CDN css frameworks
 
 ## Folder structure
 
@@ -26,8 +26,7 @@
 
 ## Package.json scripts
 - "start": "npx @11ty/eleventy --serve",
-- "build": "eleventy",
-- "debug": "DEBUG=* eleventy"
+- "build": "eleventy"
 
 ## Dependencies
 - "@11ty/eleventy": "^2.0.1"
@@ -44,8 +43,7 @@ module.exports = function (eleventyConfig) {
             includes: "../_includes", // All UI partials
             data: "../_data", // JSON datasets
             output: "_site" // This is the default
-        },
-        templateFormats: ["html", "md", "liquid"]
+        }
     };
 };
 ```
