@@ -1,17 +1,15 @@
 {
-  "name": "01-basic-liquid-simple",
+  "name": "12-simple-template",
   "version": "1.0.0",
-  "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework",
+  "description": "Eleventy 2.0.1 simple template with Liquid templating & CDN css frameworks",
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy",
-    "debug": "DEBUG=* eleventy"
+    "build": "eleventy --pathprefix '12-simple-template'"
   },
   "keywords": [
     "eleventy",
-    "liquid",
-    "simple"
+    "liquid"
 ],
   "author": "Michel Maillard",
   "license": "ISC",
