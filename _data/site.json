@@ -1,16 +1,20 @@
 {
-    "name": "10-basic-liquid-simple",
-    "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework.",
-    "github": "https://github.com/mobile-michel/10-basic-liquid-simple",
+    "name": "Website Name",
+    "description": "Eleventy 2.0.1 simple template with Liquid templating & Decap CMS.",
+    "github": "https://github.com/mobile-michel/12-simple-template",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
     "favicon": "/assets/img/favicon.png",
-    "css": "/assets/css/simple.css",
-    "cdn": {
-        "bahunya": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
-        "mvp": "https://unpkg.com/mvp.css",
-        "pico": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
-        "simple": "https://cdn.simplecss.org/simple.min.css",
-        "tacit": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"
-    }
+    "css1": "/assets/css/style.css",
+    "css2": "https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css",
+    "css3": "https://unpkg.com/mvp.css",
+    "css4": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+    "css5": "https://cdn.simplecss.org/simple.min.css",
+    "css6": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+    "css7": "https://unpkg.com/awsm.css/dist/awsm.min.css",
+    "css8": "https://unpkg.com/concrete.css",
+    "css9": "https://hawkz.github.io/gdcss/gd.css",
+    "css10": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.2",
+    "css11": "https://database-css-frameworks.netlify.app/assets/css/neat.css",
+    "css12": "https://unpkg.com/almond.css@latest/dist/almond.min.css"
 }

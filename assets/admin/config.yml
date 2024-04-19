@@ -1,23 +1,31 @@
 backend: # Required
   name: git-gateway
   branch: main
-media_folder: "assets/img/" # Required
+media_folder: "src/assets/img/" # Required
 public_folder: "assets/img/" # Required
+local_backend: true # Run "npx decap-server" for local backend | optional
 collections: # Required
-  - name: "blog" # Required. Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Required. Used in the UI
-    folder: "content/blog" # Required. The path to the folder where the documents are stored
-    create: true # Important. Allow users to create new documents in this collection
-    fields: # Required. The fields for each document, usually in front matter
-      - {name: "title"} # Required
-      - {name: "description"}
-      - {name: "date"}
-      - {name: "body"} # Required
-  - name: "settings"
-    label: "Settings"
+  - name: "pages" # Required. Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Required. Used in the UI
     files:
-      - name: "settings"
-        label: "Meta Settings"
+      - label: "Homepage" # Used in the UI | required
+        name: "index" # Used in routes, e.g., /admin/collections/blog | required
+        file: "content/index.md" # The path to the file | required
+        fields: # The fields in front matter | required
+          - { label: "Title", name: "title", widget: "string" } # required
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Collections", name: "tags", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Collections", name: "tags", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Site Settings"
+        name: "settings"
         file: "_data/site.json"
         fields:
           - { label: Name, name: name, widget: string }
@@ -26,4 +34,4 @@ collections: # Required
           - { label: Author name, name: authorName, widget: string }
           - { label: Author URL, name: authorUrl, widget: string }
           - { label: Favicon, name: favicon, widget: string }
-          - { label: CSS, name: css, widget: string }
+          - { label: CDN, name: cdn, widget: string }

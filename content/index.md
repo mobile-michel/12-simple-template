@@ -1,12 +1,11 @@
 ---
-title: Home page
+title: Home
+date: 2024-01-01
 layout: default
-tags: footer
+tags: [primary, footer]
 ---
 <a href="https://example.com">I'm a hyperlink</a>
 
-<button>I'm a button</button>
+<a href="blog/post1"><button>Blog</button></a>
 
 <a class="button" href="https://example.com">I'm a button with a link</a>
-
-CDN is {{ cdn }}

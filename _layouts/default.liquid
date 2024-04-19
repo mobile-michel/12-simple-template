@@ -1,25 +1,26 @@
 ---
+eleventyComputed:
+  css: "{{ site.css12 }}"
 layout: base
 ---
-<header role="banner">
-    {% include 'navPrimary' %}
-    {% include 'searchSite' %}
-    <h1>Company Name</h1>
+<header>
+    {% include 'nav-primary' %}
+    <h1>{{ site.name }}</h1>
 </header>
 <main>
     {% if aside %}
-    <aside role="complementary">
-        {% include 'navSecondary' %}
+    <aside>
+        {% include 'nav-secondary' %}
     </aside>
     {% endif %}
-    <section aria-labelledby="{{ title }}">
-        <h2 id="{{ title }}">{{ title }}</h2>
+    <section aria-labelledby="{{ title | slugify }}">
+        <h2 id="{{ title | slugify }}">{{ title }}</h2>
         {% if description %}<p>{{ description }}</p>{% endif %}
         {{ content }}
+        <p>Stylesheet in use: {{ css }}</p>
     </section>
 </main>
-<footer role="contentinfo">
-    {% include 'subscribe' %}
-    {% include 'navFooter' %}
+<footer>
+    {% include 'nav-footer' %}
     {% include 'copyright' %}
 </footer>

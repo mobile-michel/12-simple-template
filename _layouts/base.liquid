@@ -1,26 +1,18 @@
----
-cdn: tacit
----
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
   <meta name="author" content="{{ site.authorName }}">
   <meta name="description" content="{{ site.description }}">
   <link rel="icon" href="{{ site.favicon }}" type="image/svg+xml">
-  <title>{{ site.name }}</title>
-  <!-- CDN: bahunya, mvp, pico, simple, tacit -->
-  <link rel="stylesheet" href="{{ site.cdn.tacit | url }}">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <title>{{ title }} - {{ site.name }}</title>
+  <link rel="stylesheet" href="{{ css | url }}">
 </head>
 
 <body>
   {{ content }}
-  <script src="{{ '/assets/js/netlifyIdentity.js' | url }}"></script>
-  <script src="{{ '/assets/js/nav.js' | url }}"></script>
 </body>
 
 </html>
