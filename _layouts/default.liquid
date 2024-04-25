@@ -1,6 +1,6 @@
 ---
 eleventyComputed:
-  css: "{{ site.css12 }}"
+  css: "{{ site.css2 }}"
 layout: base
 ---
 <header>
@@ -16,8 +16,8 @@ layout: base
     <section aria-labelledby="{{ title | slugify }}">
         <h2 id="{{ title | slugify }}">{{ title }}</h2>
         {% if description %}<p>{{ description }}</p>{% endif %}
+        <p>Stylesheet in use: {{ css }}.</p>
         {{ content }}
-        <p>Stylesheet in use: {{ css }}</p>
     </section>
 </main>
 <footer>

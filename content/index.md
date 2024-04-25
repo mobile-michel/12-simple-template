@@ -4,8 +4,9 @@ date: 2024-01-01
 layout: default
 tags: [primary, footer]
 ---
-<a href="https://example.com">I'm a hyperlink</a>
-
-<a href="blog/post1"><button>Blog</button></a>
-
-<a class="button" href="https://example.com">I'm a button with a link</a>
+{% assign items = stylesheet | sort: 'landmarks' | reverse %}
+{% for item in items %}
+{% if item.landmarks-name %}
+- **{{ item.name }}**: {{ item.landmarks }}% ({{ item.landmarks-name }})
+{% endif %}
+{% endfor %}
