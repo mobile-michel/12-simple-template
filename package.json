@@ -1,11 +1,14 @@
 {
-  "name": "database-css",
+  "name": "12-simple-template",
   "version": "1.0.0",
-  "description": "Database of CSS frameworks with centered content",
+  "description": "Simple template with Eleventy, Liquid & CDN css frameworks",
   "main": "eleventy.config.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy --pathprefix 'database-css'"
+    "serve": "npx @11ty/eleventy --serve",
+    "decap": "npx decap-server",
+    "start": "npx decap-server & npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "build-gp": "eleventy --pathprefix '12-simple-template'"
   },
   "keywords": [
     "eleventy",

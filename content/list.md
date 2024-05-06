@@ -5,5 +5,5 @@ layout: default
 tags: [primary]
 ---
 {% for post in collections.list %}
-- [{{ post.data.title }}]({{ post.url }})
+- [{{ post.data.title }}]({{ post.url | url }})
 {% endfor %}
